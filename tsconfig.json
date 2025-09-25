@@ -1,0 +1,54 @@
+{
+	"compilerOptions": {
+		/* Base Options: */
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"target": "es2022",
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		"forceConsistentCasingInFileNames": true,
+
+		/* Strictness */
+		"strict": false, // true | false
+		"noUncheckedIndexedAccess": true,
+		"strictNullChecks": true, // true | false
+		// "checkJs": true,
+
+		/* Bundled projects */
+		"lib": ["dom", "es5", "es6", "dom.iterable", "esnext"],
+		"noEmit": true,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"jsx": "preserve",
+		"plugins": [{ "name": "next" }],
+		"incremental": true,
+
+		/* Path Aliases */
+		"baseUrl": ".",
+		"paths": {
+			// "@/*": ["./*"],
+			"@layouts/*": ["./src/layouts/*"],
+			"@src/*": ["./src/*"],
+			"@app/*": ["./src/app/*"],
+			"@components/*": ["./src/components/*"],
+			"@pages/*": ["pages/*"],
+			"@actions/*": ["./src/lib/actions/*"],
+			"@hooks/*": ["./src/hooks/*"],
+			"@utils/*": ["./src/utils/*"]
+		}
+	},
+	"include": [
+		".eslintrc.cjs",
+		"declarations.d.ts",
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.cjs",
+		"**/*.js",
+		"**/*.jsx",
+		".next/types/**/*.ts"
+	],
+	"exclude": ["node_modules", "IneritaPages"]
+}

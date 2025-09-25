@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font face support */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); */
+
+@layer base {
+  :root {
+    --font-sans: 'Causten', system-ui, sans-serif;
+    --radius: 0.5rem;
+
+    /* === Core Design Tokens (Light Only) =============================== */
+    --background: 0 0% 100%;       /* #FFFFFF */
+    --foreground: 180 4% 25%;      /* Neutral text (#5B6664 approx) */
+    --muted: 180 8% 90%;           /* #D0DCD9 */
+    --muted-foreground: 180 6% 40%;/* #828282 */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 4% 25%;
+
+    --border: 180 6% 85%;
+    --input: 180 6% 85%;
+    --card: 0 0% 100%;
+    --card-foreground: 180 4% 25%;
+
+    /* Brand / Accent colors (picked from screenshot) */
+    --primary: 165 66% 41%;        /* #22AB98 */
+    --primary-foreground: 0 0% 100%; /* white text */
+
+    --secondary: 166 54% 39%;      /* #20A673 */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 168 64% 20%;         /* #0C5C4E */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 80% 60%;      /* #FA3E3E */
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 168 30% 60%;           /* teal-ish highlight */
+
+    /* Gradients (optional) */
+    --from-color: 168 60% 75%;     /* #99D8CF */
+    --to-color: 168 35% 90%;       /* #E9F3F0 */
+
+    /* === Extra brand tints ============================================ */
+    --brand: 165 66% 41%;          /* #22AB98 main brand */
+    --brand-foreground: 0 0% 100%;
+    --brand-accent: 197 45% 55%;   /* #3C4BA6 (blue accent) */
+
+    /* Surfaces */
+    --surface: 0 0% 100%;
+    --surface-foreground: 180 4% 25%;
+    --surface-muted: 165 60% 94%;      /* #EBFFFB pale mint */
+    --surface-muted-foreground: 168 25% 35%; /* #7CB2AB */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans transition-colors duration-300 ease-in-out;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground));
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,14 @@
+"use client";
+
+import { useState } from "react";
+
+
+export default function Hero() {
+
+
+   return (
+      <div>
+         <h1>Hero Screen</h1>
+      </div>
+   );
+}
