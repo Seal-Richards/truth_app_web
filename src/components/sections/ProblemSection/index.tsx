@@ -17,7 +17,7 @@ export default function ProblemSection() {
       >
          {/* Background string graphic - RIGHT */}
          <div
-            className="absolute top-[65%] right-0 -translate-y-1/2 w-[600px] z-0 pointer-events-none"
+            className="absolute top-[65%] right-0 -translate-y-1/2 w-[600px] z-0 pointer-events-none animate-[pulse_1.6s_ease-in-out_1_forwards]"
             aria-hidden
          >
             <SvgLines />
@@ -25,7 +25,7 @@ export default function ProblemSection() {
 
          {/* Background string graphic - LEFT (mirrored) */}
          <div
-            className="absolute top-[65%] left-0 -translate-y-1/2 w-[600px] z-0 pointer-events-none scale-x-[-1]"
+            className="absolute top-[65%] left-0 -translate-y-1/2 w-[600px] z-0 pointer-events-none scale-x-[-1] animate-[pulse_1.6s_ease-in-out_1_forwards]"
             aria-hidden
          >
             <SvgLines />
