@@ -6,6 +6,7 @@ import DefaultLayout from "@src/layouts/DefaultLayout";
 import ReviewSection from "@src/components/sections/ReviewSection";
 import HowItWorks from "@src/components/sections/HowItWorks";
 import PricingPlans from "@src/components/sections/PricingPlans";
+import FAQSection from "@src/components/sections/Faq";
 
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
       <ReviewSection />
       <HowItWorks />
       <PricingPlans />
+      <FAQSection />
     </DefaultLayout>
   );
 }

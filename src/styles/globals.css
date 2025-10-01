@@ -56,6 +56,11 @@
   }
 
 
+}
+
+
+
+
 /* ------------------------
    HERO: gradient + slant + floats
    ------------------------ */
@@ -111,18 +116,23 @@
   @media (min-width: 1024px) {
     .hero-root { min-height: 720px; }
   }
-  
 
-  /* Scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--muted-foreground));
-    border-radius: 4px;
-  }
-  ::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
+
+  
+/* Optional: global thin scrollbar */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+/* For Webkit (Chrome, Safari) */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #34d399; /* emerald-400 */
+  border-radius: 10px;
 }
