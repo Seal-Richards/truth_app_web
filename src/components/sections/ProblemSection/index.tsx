@@ -103,10 +103,12 @@ export default function ProblemSection() {
 
                      <Button
                         variant="default"
-                        className="rounded-md px-6 py-6 shadow bg-teal-600 text-white"
+                        className="rounded-md px-6 py-6 shadow bg-teal-600 text-white flex items-center gap-2"
                      >
-                        Explore Features <HiArrowUpRight h-10 w-10 />
+                        Explore Features
+                        <HiArrowUpRight className="w-6 h-6" />
                      </Button>
+
                   </div>
                </div>
 
