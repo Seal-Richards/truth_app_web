@@ -5,6 +5,7 @@ import MiniBanner from "@src/components/banners/MiniBanner";
 import DefaultLayout from "@src/layouts/DefaultLayout";
 import ReviewSection from "@src/components/sections/ReviewSection";
 import HowItWorks from "@src/components/sections/HowItWorks";
+import PricingPlans from "@src/components/sections/PricingPlans";
 
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
       <MiniBanner />
       <ReviewSection />
       <HowItWorks />
+      <PricingPlans />
     </DefaultLayout>
   );
 }
