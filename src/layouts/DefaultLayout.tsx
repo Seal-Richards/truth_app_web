@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Header from "@src/components/Header";
+import Footer from "@src/components/Footer";
 
 
 export default function DefaultLayout({ children }: { children: ReactNode }) {
@@ -8,7 +9,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
       <Header />
       <main className="flex-1">{children}</main>
 
-      {/* optional Footer here */}
+      <Footer />
     </div>
   );
 }
