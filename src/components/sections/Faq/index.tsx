@@ -123,29 +123,7 @@ export default function FAQSection() {
       </div>
 
       {/* Footer Section */}
-      <div className="mt-16 text-center max-w-2xl">
-        <h3 className="text-3xl font-semibold mb-2">Your Safety, Your Way.</h3>
-        <p className="text-gray-600 mb-4">
-          Download TruthHub app and take control of your peace of mind, whether
-          at home or on the move.
-        </p>
-        <div className="flex justify-center gap-3 flex-wrap">
-          <a
-            href="#"
-            className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg"
-          >
-            <Icon icon="logos:google-play-icon" className="text-xl" />
-            <span>Google Play</span>
-          </a>
-          <a
-            href="#"
-            className="flex items-center gap-2 bg-emerald-500 text-white px-4 py-2 rounded-lg"
-          >
-            <Icon icon="grommet-icons:apple-app-store" className="w-5 h-5" />
-            <span>App Store</span>
-          </a>
-        </div>
-      </div>
+     
     </section>
   );
 }

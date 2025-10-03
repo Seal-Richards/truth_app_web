@@ -57,7 +57,7 @@ export default function Hero() {
                      variant="outline"
                      className="rounded-xl px-5 py-4 flex items-center gap-3 bg-white text-foreground shadow-md hover:translate-y-[-2px] transition-transform"
                   >
-                     <Icon icon="grommet-icons:apple-app-store" width="48" height="48" />
+                     <Icon icon="grommet-icons:apple-app-store" className="w-5 h-5" />
                      <span className="flex flex-col items-start text-sm">
                         <span className="font-medium">App Store</span>
                      </span>
