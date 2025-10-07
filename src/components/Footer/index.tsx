@@ -42,15 +42,15 @@ export default function Footer() {
                <div className="flex flex-col gap-6 max-w-md">
                   {/* Logo */}
                   <div className="flex items-center gap-2">
-                     {/* <Image
-            src="/assets/truthhub_icon.png"
-            alt="Truth Hub Logo"
-            width={50}
-            height={50}
-            priority
-            className="p-2"
-          /> */}
-                     <Icon icon="mdi:hexagon-outline" className="w-8 h-8 text-[#4AE2C2]" />
+                     <Image
+                        src="/assets/truthhub_icon_footer.png"
+                        alt="Truth Hub Logo"
+                        width={50}
+                        height={50}
+                        priority
+                        className="p-2"
+                     />
+
                      <span className="text-xl font-bold">TRUTH HUB</span>
                   </div>
 
