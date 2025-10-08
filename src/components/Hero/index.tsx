@@ -127,7 +127,7 @@ export default function Hero() {
                         absolute z-[30]
                         right-[-8%] sm:right-[-6%] md:right-[-6%] lg:right-[-6%]
                         top-1/2 transform -translate-y-1/2
-                        flex items-center
+                        flex items-center sm:hidden
                      "
                   >
                      <button
