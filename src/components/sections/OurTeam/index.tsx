@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@src/components/ui/card";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import { Heading3 } from "lucide-react";
 
 export default function OurTeam() {
   return (
@@ -11,7 +12,7 @@ export default function OurTeam() {
         <CardContent className="p-6 md:p-10">
           {/* Header */}
           <div className="flex items-center gap-2 mb-6">
-            <Icon icon="mdi:star-circle-outline" className="text-emerald-700 w-6 h-6 md:w-7 md:h-7" />
+          <Icon icon="material-symbols:asterisk" width="48" height="48" className="text-accent" />
             <h2 className="text-lg md:text-xl font-semibold text-gray-900">
               Our Team
             </h2>
@@ -20,7 +21,7 @@ export default function OurTeam() {
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
             {/* Left image placeholder */}
             <div className="mt-8 md:mt-0 w-full md:w-[50%] flex justify-center">
-               <div className="rounded-xl overflow-hidden shadow-lg border border-[#22ab98]/20">
+               <div className="rounded-xl overflow-hidden shadow-lg border border-accent">
                   <Image
                      src="/assets/tech-image.png"
                      alt="Technology illustration"
@@ -32,7 +33,7 @@ export default function OurTeam() {
                </div>
             </div>
             {/* Text content */}
-            <p className="w-full md:w-2/3 text-gray-700 leading-relaxed text-sm md:text-base">
+            <h3 className="w-full md:w-2/3 text-accent text-[15px] md:text-[20px]">
               At the heart of Truth Hub is a team of innovators, strategists,
               and visionaries committed to building a safer world. Our strength
               lies in diversity — a unique combination of voices and expertise
@@ -41,7 +42,7 @@ export default function OurTeam() {
               united by one mission: to redefine how people and organizations
               establish trust, protect their interests, and engage with
               confidence.
-            </p>
+            </h3>
           </div>
         </CardContent>
       </Card>

@@ -2,6 +2,8 @@
 
 import { ArrowRight } from "lucide-react";
 
+import { Icon } from "@iconify/react";
+
 export default function MiniAboutBanner() {
   const values = [
     "Trust",
@@ -14,11 +16,16 @@ export default function MiniAboutBanner() {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-r from-emerald-900 to-gray-900 py-6">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        {/* Header */}
-        <h2 className="text-white text-lg md:text-xl font-semibold mb-4">
-          TruthHub Core Values
-        </h2>
-
+        {/* Left Content */}
+        <div className="flex items-center gap-2 md:gap-3">
+          <div className="flex items-center justify-center rounded-full flex-shrink-0 text-primary">
+            <Icon icon="material-symbols:asterisk" width="48" height="48" />
+          </div>
+          {/* Header */}
+          <h2 className="text-white text-lg md:text-xl font-semibold mb-4">
+            TruthHub Core Values
+          </h2>
+        </div>
         {/* Auto-scrolling container */}
         <div className="relative overflow-hidden">
           <div className="flex items-center space-x-3 animate-marquee whitespace-nowrap">

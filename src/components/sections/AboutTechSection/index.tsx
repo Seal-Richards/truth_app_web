@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 export default function AboutTechSection() {
    return (
-      <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#f8fdfa] to-[#eefaf7] py-16 mt-10">
+      <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#f8fdfa] to-[#eefaf7] py-6 mt-4">
          {/* Background SVG Lines */}
          <div
             className="absolute top-1/2 right-0 -translate-y-1/2 w-[700px] z-0 pointer-events-none opacity-100"
@@ -22,17 +22,17 @@ export default function AboutTechSection() {
          </div>
 
          {/* Content Section */}
-         <div className="relative z-10 mx-auto max-w-6xl px-16 py-40 bg-white/60 backdrop-blur-md border border-[#c7ebe3] rounded-2xl shadow-sm flex flex-col md:flex-row items-center justify-between">
+         <div className="relative z-10 mx-auto max-w-6xl px-10 py-20 bg-white/60 backdrop-blur-md border border-[#c7ebe3] rounded-2xl shadow-sm flex flex-col md:flex-row items-center justify-between">
             {/* Left Text */}
             <div className="flex flex-col items-start gap-3 text-left w-full md:w-1/2">
                <div className="flex items-center gap-2">
                   <Icon
                      icon="material-symbols:asterisk"
-                     className="text-[#22ab98]"
+                     className="text-accent"
                      width={28}
                      height={28}
                   />
-                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-800 leading-snug">
+                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-accent">
                      Technology That Protects.
                      <br />
                      Intelligence That Empowers

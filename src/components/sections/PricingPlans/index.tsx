@@ -168,7 +168,7 @@ export default function PricingPlans() {
   const plansToRender = getPlans();
 
   return (
-    <section className="relative w-full py-16 bg-gradient-to-b from-emerald-900/80 via-emerald-800 to-emerald-900 text-white overflow-hidden">
+    <section className="relative w-full py-16 bg-gradient-to-t from-emerald-900/70 via-emerald-900/70 to-emerald-600 text-white overflow-hidden">
       {/* Decorative gradient glows */}
       <div aria-hidden className="absolute -top-28 -left-36 w-96 h-96 rounded-full blur-3xl bg-emerald-600/30" />
       <div aria-hidden className="absolute top-20 left-10 w-80 h-80 rounded-full blur-2xl bg-emerald-400/20" />
@@ -177,7 +177,7 @@ export default function PricingPlans() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-6">
-          <span className="inline-block px-4 py-1 rounded-md bg-emerald-600 text-sm font-semibold">
+          <span className="inline-block px-4 py-1 rounded-md bg-primary text-sm font-semibold">
             SUBSCRIPTION PLAN
           </span>
         </div>

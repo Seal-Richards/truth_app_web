@@ -33,7 +33,7 @@ export default function StatementsSection() {
           <div key={idx} className="space-y-3">
             {/* Tag */}
             <div>
-              <span className="inline-block text-xs font-semibold bg-[#22ab98] text-white px-3 py-1 rounded-md">
+              <span className="inline-block text-[15px] font-semibold bg-primary text-white px-3 py-1 rounded-md">
                 {item.tag}
               </span>
             </div>
@@ -42,14 +42,14 @@ export default function StatementsSection() {
             <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-6 items-start">
               {/* Left: title + arrow */}
               <div className="flex items-center gap-2">
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                <h3 className="text-[30px] sm:text-[30px] font-bold text-accent">
                   {item.title}
                 </h3>
-                <ArrowDownRight className="text-[#22ab98] w-6 h-6 flex-shrink-0" />
+                <ArrowDownRight className="text-accent w-10 h-10 flex-shrink-0" />
               </div>
 
               {/* Right: description */}
-              <p className="text-muted-foreground text-[15px] sm:text-base leading-relaxed">
+              <p className="text-muted-foreground text-[15px] sm:text-[20px]">
                 {item.description}
               </p>
             </div>

@@ -94,14 +94,14 @@ export default function Footer() {
           <div className="flex justify-center gap-3 flex-wrap">
             <a
               href="#"
-              className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg"
+              className="flex items-center gap-2 bg-accent text-white px-4 py-2 rounded-lg"
             >
               <Icon icon="logos:google-play-icon" className="text-xl" />
               <span>Google Play</span>
             </a>
             <a
               href="#"
-              className="flex items-center gap-2 bg-emerald-500 text-white px-4 py-2 rounded-lg"
+              className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg"
             >
               <Icon icon="grommet-icons:apple-app-store" className="w-5 h-5" />
               <span>App Store</span>
@@ -111,7 +111,7 @@ export default function Footer() {
       </section>
 
       {/* Main Footer */}
-      <footer className="bg-[#132C28] text-white px-6 sm:px-10 lg:px-20 py-10">
+      <footer className="bg-accent text-white px-6 sm:px-10 lg:px-20 py-10">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10">
           {/* Left Section */}
           <div className="flex flex-col gap-6 max-w-md">
@@ -164,7 +164,7 @@ export default function Footer() {
                   placeholder="Enter your mail address"
                   className="bg-[#1D3C38] border-none text-white placeholder-gray-400 w-full sm:w-72"
                 />
-                <Button className="bg-[#2ADABF] hover:bg-[#21bfa7] text-white">
+                <Button className="bg-primary text-white">
                   Subscribe
                 </Button>
               </div>
@@ -183,7 +183,7 @@ export default function Footer() {
                     <button
                       key={link.label}
                       onClick={() => handleNavClick(link.href)}
-                      className="text-left hover:text-[#2ADABF] transition-colors"
+                      className="text-left hover:text-primary transition-colors"
                     >
                       {link.label}
                     </button>
@@ -206,6 +206,9 @@ export default function Footer() {
             </a>
             <a href="#">
               <Icon icon="fa7-brands:square-x-twitter" className="w-5 h-5" />
+            </a>
+            <a href="#">
+              <Icon icon="fa7-brands:instagram-square" className="w-5 h-5" />
             </a>
           </div>
         </div>

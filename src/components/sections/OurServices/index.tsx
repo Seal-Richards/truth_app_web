@@ -37,7 +37,7 @@ export default function OurServices() {
 
       {/* Section Header */}
       <div className="relative z-10 text-center max-w-3xl mx-auto">
-        <Badge className="bg-emerald-600/80 text-white text-xs tracking-wide mb-4 rounded-full px-4 py-1 uppercase">
+        <Badge className="bg-primary text-white text-xs tracking-wide mb-4 rounded-full px-4 py-1 uppercase">
           Services / Products
         </Badge>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
@@ -58,7 +58,7 @@ export default function OurServices() {
           <div className="flex items-start gap-2 mb-3">
             <Icon
               icon="mdi:arrow-right"
-              className="text-emerald-400 mt-1 text-xl flex-shrink-0"
+              className="text-primary mt-1 text-xl flex-shrink-0"
             />
             <h3 className="font-semibold text-lg">TruthHub Check-In</h3>
           </div>
@@ -74,7 +74,7 @@ export default function OurServices() {
           <div className="flex items-start gap-2 mb-3">
             <Icon
               icon="mdi:arrow-right"
-              className="text-emerald-400 mt-1 text-xl flex-shrink-0"
+              className="text-primary mt-1 text-xl flex-shrink-0"
             />
             <h3 className="font-semibold text-lg">TruthHub Knocking Service</h3>
           </div>
@@ -94,11 +94,11 @@ export default function OurServices() {
           <div className="flex items-start gap-2 mb-3">
             <Icon
               icon="mdi:arrow-right"
-              className="text-emerald-400 mt-1 text-xl flex-shrink-0"
+              className="text-primary mt-1 text-xl flex-shrink-0"
             />
             <h3 className="font-semibold text-lg flex items-center gap-2">
               Verified by TruthHub
-              <Badge className="text-[10px] bg-emerald-600/70 text-white rounded-full">
+              <Badge className="text-[10px] bg-primary text-white rounded-full text-nowrap">
                 Coming soon
               </Badge>
             </h3>
@@ -115,11 +115,11 @@ export default function OurServices() {
           <div className="flex items-start gap-2 mb-3">
             <Icon
               icon="mdi:arrow-right"
-              className="text-emerald-400 mt-1 text-xl flex-shrink-0"
+              className="text-primary mt-1 text-xl flex-shrink-0"
             />
             <h3 className="font-semibold text-lg flex items-center gap-2">
               Secured by TruthHub
-              <Badge className="text-[10px] bg-emerald-600/70 text-white rounded-full">
+              <Badge className="text-[10px] bg-primary text-white rounded-full text-nowrap">
                 Coming soon
               </Badge>
             </h3>
