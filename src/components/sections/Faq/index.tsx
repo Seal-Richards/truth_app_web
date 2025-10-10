@@ -45,14 +45,14 @@ export default function FAQSection() {
     <section className="w-full bg-white px-4 md:px-8 lg:px-16 py-12 flex flex-col items-center">
       {/* Top Label */}
       <div className="mb-3">
-        <span className="px-4 py-1 bg-emerald-500 text-white text-sm rounded-md font-medium uppercase tracking-wide">
+        <span className="px-4 py-1 bg-primary text-white text-sm rounded-md font-medium uppercase tracking-wide">
           Frequently Asked Questions
         </span>
       </div>
 
       {/* Heading */}
       <h2 className="text-center text-2xl md:text-3xl font-bold mb-6">
-        <span className="text-emerald-400">Got Questions?</span> We’ve Got Answers.
+        <span className="text-primary">Got Questions?</span> We’ve Got Answers.
       </h2>
 
       {/* Toggle Buttons */}
@@ -64,8 +64,8 @@ export default function FAQSection() {
           }}
           className={`px-5 py-2 rounded-md font-medium border transition ${
             activeTab === "knocking"
-              ? "bg-emerald-600 text-white border-emerald-600"
-              : "bg-white text-emerald-600 border-emerald-600"
+              ? "bg-primary text-white border-primary"
+              : "bg-white text-primary border-primary"
           }`}
         >
           Knocking Service
@@ -77,8 +77,8 @@ export default function FAQSection() {
           }}
           className={`px-5 py-2 rounded-md font-medium border transition ${
             activeTab === "checkin"
-              ? "bg-emerald-600 text-gray-400 border-emerald-600"
-              : "bg-white text-emerald-600 border-emerald-600"
+              ? "bg-primary text-white border-primary"
+              :"bg-white text-primary border-primary"
           }`}
         >
           Check-In Service
