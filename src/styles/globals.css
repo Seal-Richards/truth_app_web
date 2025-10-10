@@ -117,7 +117,15 @@
     .hero-root { min-height: 720px; }
   }
 
-
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #features,
+  #pricing,
+  #faq {
+    scroll-margin-top: 80px; /* adjust for header height */
+  }
   
 /* Optional: global thin scrollbar */
 .scrollbar-thin {

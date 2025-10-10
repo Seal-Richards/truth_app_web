@@ -3,6 +3,7 @@ import "@src/styles/globals.css";
 import "@src/styles/fonts.css";
 import { Toaster } from "@src/components/ui/sonner";
 import { ReactNode } from "react";
+import Whatsapp from "@src/components/atoms/Whatsapp";
 
 export const metadata: Metadata = {
   title: {
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="min-h-screen bg-background text-foreground font-sans transition-colors duration-300">
         {children}
         <Toaster richColors position="bottom-left" />
+        <Whatsapp />
       </body>
     </html>
   );
