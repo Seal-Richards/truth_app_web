@@ -31,8 +31,8 @@ export default function Hero() {
             {/* LEFT */}
             <div className="flex flex-col gap-6 text-center lg:text-left px-6 sm:px-0">
                <h1 className="leading-tight font-regular text-[2.25rem] text-white sm:text-4xl md:text-5xl lg:text-[56px] tracking-tight">
-                  <span className="text-[hsl(var(--primary))]">Technology</span> That <br />
-                  Protects, <span className="text-[hsl(var(--primary))]">Intelligence</span> <br />
+                  <span className="text-primary">Technology</span> That <br />
+                  Protects, <span className="text-primary">Intelligence</span> <br />
                   That Empowers.
                </h1>
 

@@ -34,11 +34,11 @@ export default function ProblemSection() {
          {/* Top content */}
          <div className="container mx-auto px-4 lg:px-12 pt-12">
             <div className="max-w-3xl mx-auto text-center">
-               <div className="inline-block rounded-md px-4 py-1 mb-4 bg-teal-600">
+               <div className="inline-block rounded-md px-4 py-1 mb-4 bg-primary">
                   <span className="text-sm font-medium text-white">PROBLEM</span>
                </div>
 
-               <h2 className="font-bold mb-4 text-3xl sm:text-3xl lg:text-3xl">
+               <h2 className="font-bold text-accent mb-4 text-3xl sm:text-3xl lg:text-3xl">
                   Safety shouldn’t be a guessing game.
                </h2>
 
@@ -60,20 +60,20 @@ export default function ProblemSection() {
                {/* Card */}
                <div className="relative flex-1 w-full bg-white">
                   <div
-                     className="relative h-auto rounded-2xl p-6 lg:p-10 shadow-md border-teal-700"
+                     className="relative h-auto rounded-2xl p-6 lg:p-10 shadow-md border-primary"
                      style={{ border: "2px solid" }}
                   >
                      <div className="mb-4">
-                        <span className="inline-block text-xs font-semibold px-3 py-1 rounded-md bg-teal-600 text-white">
+                        <span className="inline-block text-xs font-semibold px-3 py-1 rounded-md bg-primary text-white">
                            OUR SOLUTION
                         </span>
                      </div>
 
                      <div className="flex items-start gap-4 mb-6">
-                        <div className="flex items-center justify-center rounded-full flex-shrink-0 text-teal-900">
+                        <div className="flex items-center justify-center rounded-full flex-shrink-0 text-accent">
                            <Icon icon="material-symbols:asterisk" width="48" height="48" />
                         </div>
-                        <h3 className="text-2xl sm:text-3xl font-bold text-teal-800">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-accent">
                            One App. <br /> Total Assurance.
                         </h3>
                      </div>
@@ -91,7 +91,7 @@ export default function ProblemSection() {
                         ].map((benefit, idx) => (
                            <div key={idx} className="flex items-start gap-3">
                               <div
-                                 className="rounded-full flex items-center justify-center flex-shrink-0 bg-teal-600 text-white"
+                                 className="rounded-full flex items-center justify-center flex-shrink-0 bg-primary text-white"
                                  style={{ width: 20, height: 20 }}
                               >
                                  <Icon icon="mdi:check" className="w-4 h-4" />
@@ -103,7 +103,7 @@ export default function ProblemSection() {
 
                      <Button
                         variant="default"
-                        className="rounded-md px-6 py-6 shadow bg-teal-600 text-white flex items-center gap-2"
+                        className="rounded-md px-6 py-6 shadow bg-primary text-white flex items-center gap-2"
                      >
                         Explore Features
                         <HiArrowUpRight className="w-6 h-6" />

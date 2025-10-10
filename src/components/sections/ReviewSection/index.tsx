@@ -26,7 +26,7 @@ const reviews: Review[] = [
 export default function ReviewSection(): JSX.Element {
   return (
     <section className="w-full bg-[#E6F8F8] py-10 px-4 sm:px-8 lg:px-16">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl p-4 sm:p-6 flex flex-col gap-4">
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl py-10 sm:p-6 flex flex-col gap-4">
         {reviews.map((review, index) => (
           <Card
             key={index}

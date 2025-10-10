@@ -144,3 +144,17 @@
   background-color: #34d399; /* emerald-400 */
   border-radius: 10px;
 }
+.icon-gradient-green {
+  display: inline-block;
+  color: transparent;
+  background: linear-gradient(
+    145deg,
+    hsl(165 70% 45%) 0%,
+    hsl(165 65% 35%) 40%,
+    hsl(165 70% 25%) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+}
