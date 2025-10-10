@@ -62,11 +62,10 @@ export default function FAQSection() {
             setActiveTab("knocking");
             setSelectedIndex(0);
           }}
-          className={`px-5 py-2 rounded-md font-medium border transition ${
-            activeTab === "knocking"
-              ? "bg-primary text-white border-primary"
-              : "bg-white text-primary border-primary"
-          }`}
+          className={`px-5 py-2 rounded-md font-medium border transition ${activeTab === "knocking"
+            ? "bg-primary text-white border-primary"
+            : "bg-white text-primary border-primary"
+            }`}
         >
           Knocking Service
         </button>
@@ -75,11 +74,10 @@ export default function FAQSection() {
             setActiveTab("checkin");
             setSelectedIndex(0);
           }}
-          className={`px-5 py-2 rounded-md font-medium border transition ${
-            activeTab === "checkin"
-              ? "bg-primary text-white border-primary"
-              :"bg-white text-primary border-primary"
-          }`}
+          className={`px-5 py-2 rounded-md font-medium border transition ${activeTab === "checkin"
+            ? "bg-primary text-white border-primary"
+            : "bg-white text-primary border-primary"
+            }`}
         >
           Check-In Service
         </button>
@@ -98,11 +96,10 @@ export default function FAQSection() {
               <button
                 key={index}
                 onClick={() => setSelectedIndex(index)}
-                className={`text-left px-4 py-3 rounded-lg border transition ${
-                  selectedIndex === index
-                    ? "bg-emerald-900 text-white border-emerald-900"
-                    : "bg-white text-gray-800 border-gray-200 hover:border-emerald-600"
-                }`}
+                className={`text-left px-4 py-3 rounded-lg border transition ${selectedIndex === index
+                  ? "bg-emerald-900 text-white border-emerald-900"
+                  : "bg-white text-gray-800 border-gray-200 hover:border-emerald-600"
+                  }`}
               >
                 {faq.question}
               </button>
@@ -116,14 +113,14 @@ export default function FAQSection() {
             <Icon icon="mdi:asterisk" className="text-emerald-600 text-xl" />
             <h3 className="text-lg font-semibold">Answers</h3>
           </div>
-          <div className="bg-emerald-900 text-white p-5 rounded-lg leading-relaxed max-h-64 overflow-y-auto scrollbar-thin">
+          <div className="bg-accent text-white p-5 rounded-lg leading-relaxed max-h-64 overflow-y-auto scrollbar-thin">
             {currentFAQs[selectedIndex]?.answer}
           </div>
         </div>
       </div>
 
       {/* Footer Section */}
-     
+
     </section>
   );
 }
