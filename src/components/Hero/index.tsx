@@ -120,32 +120,6 @@ export default function Hero() {
                         </li>
                      </ul>
                   </div>
-
-                  {/* WhatsApp Pill */}
-                  <div
-                     className="
-                        absolute z-[30]
-                        right-[-8%] sm:right-[-6%] md:right-[-6%] lg:right-[-6%]
-                        top-1/2 transform -translate-y-1/2
-                        flex items-center sm:hidden
-                     "
-                  >
-                     <button
-                        className="
-                           hero-whatsapp inline-flex items-center gap-2 sm:gap-3
-                           rounded-full px-3 py-1.5 sm:px-4 sm:py-2
-                           shadow-2xl border-[3px] border-emerald-500 bg-white
-                        "
-                        aria-label="Chat with us on WhatsApp"
-                     >
-                        <span className="bg-white rounded-full p-1 sm:p-2 flex items-center justify-center">
-                           <RiWhatsappFill className="h-4 w-4 sm:h-5 sm:w-5 text-[hsl(var(--primary))]" />
-                        </span>
-                        <span className="text-xs sm:text-sm font-medium">
-                           Chat with us on WhatsApp
-                        </span>
-                     </button>
-                  </div>
                </div>
             </div>
          </div>

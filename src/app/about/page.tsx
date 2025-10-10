@@ -36,7 +36,9 @@ export default function AboutPage() {
       <MiniAboutBanner />
       <OurTeam />
       <OurServices />
-      <FAQSection />
+      <div id="faq">
+        <FAQSection />
+      </div>
       <NewsLetterSection />
     </DefaultLayout>
   );

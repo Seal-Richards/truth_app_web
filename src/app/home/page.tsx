@@ -13,12 +13,19 @@ export default function HomePage() {
   return (
     <DefaultLayout>
       <Hero />
-      <ProblemSection />
+      <div id="features" >
+        <ProblemSection />
+      </div>
+
       <MiniBanner />
       <ReviewSection />
       <HowItWorks />
-      <PricingPlans />
-      <FAQSection />
+      <div id="pricing">
+        <PricingPlans />
+      </div>
+      <div id="faq">
+        <FAQSection />
+      </div>
     </DefaultLayout>
   );
 }

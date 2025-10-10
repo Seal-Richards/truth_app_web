@@ -7,7 +7,7 @@ export default function MiniBanner() {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-r from-emerald-900 to-gray-900">
       {/* Inner container with max-width */}
-      <div className="max-w-6xl mx-auto px-6 md:px-8 py-6 md:py-8 flex items-center justify-between relative">
+      <div className="max-w-4xl mx-auto px-6 md:px-8 py-6 md:py-8 flex items-center justify-between relative">
         {/* Left Content */}
         <div className="flex items-center gap-2 md:gap-3">
           <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12">

@@ -55,18 +55,6 @@ export default function AboutTechSection() {
             </div>
          </div>
 
-         {/* WhatsApp Chat Button */}
-         <div className="absolute top-4 right-6 z-20">
-            <a
-               href="https://wa.me/yourwhatsapplink"
-               target="_blank"
-               rel="noopener noreferrer"
-               className="flex items-center gap-2 bg-white border border-[#22ab98] rounded-full px-4 py-1.5 shadow-sm hover:bg-[#22ab98] hover:text-white transition-all"
-            >
-               <Icon icon="ic:baseline-whatsapp" width={20} height={20} />
-               <span className="text-sm font-medium">Chat with us on WhatsApp</span>
-            </a>
-         </div>
       </section>
    );
 }
