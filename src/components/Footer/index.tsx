@@ -8,6 +8,7 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import ContactModal from "@src/components/modals/ContactModal";
 import CustomNotification from "@src/components/modals/ContactModal/CustomNotification";
+import { toast } from 'sonner';
 
 // Smooth scroll helper
 const scrollToSection = (id: string) => {
@@ -80,6 +81,37 @@ export default function Footer() {
       sessionStorage.removeItem("scrollTarget");
     }
   }, []);
+
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubscribe = async () => {
+    if (!email.trim()) {
+      toast.error('Please enter a valid email.');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    const formData = new FormData();
+    formData.append('EMAIL', email);
+    formData.append('b_01fd22c1a0d13a09ec4ed2534_41979459af', '');
+
+    try {
+      await fetch('https://truthhub.us13.list-manage.com/subscribe/post?u=01fd22c1a0d13a09ec4ed2534&id=41979459af', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData,
+      });
+
+      toast.success('Thank you for subscribing!');
+      setEmail('');
+    } catch (error) {
+      toast.error('Something went wrong. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <>
@@ -162,13 +194,20 @@ export default function Footer() {
                 <Input
                   type="email"
                   placeholder="Enter your mail address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="bg-[#1D3C38] border-none text-white placeholder-gray-400 w-full sm:w-72"
                 />
-                <Button className="bg-primary text-white">
-                  Subscribe
+                <Button
+                  onClick={handleSubscribe}
+                  disabled={isSubmitting}
+                  className="bg-primary text-white"
+                >
+                  {isSubmitting ? 'Submitting...' : 'Subscribe'}
                 </Button>
               </div>
             </div>
+
 
             {/* Links */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-sm text-gray-300">
