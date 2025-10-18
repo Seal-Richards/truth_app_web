@@ -33,10 +33,12 @@ export default function DynamicContents({
           )}
           {heading}
         </h2>
+        {description.split("\n").map((line, idx) => (
+          <p key={idx} className="text-muted-foreground text-sm md:text-base leading-relaxed mb-2">
+            {line}
+          </p>
+        ))}
 
-        <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-          {description}
-        </p>
       </Card>
     </section>
   );

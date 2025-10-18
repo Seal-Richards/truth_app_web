@@ -7,7 +7,7 @@ export default function Whatsapp() {
     <div
       className="
         fixed z-[9999]
-        bottom-6 right-4 sm:bottom-8 sm:right-8
+        bottom-16 right-4 sm:bottom-18 sm:right-8
         flex items-center
       "
     >
@@ -29,7 +29,7 @@ export default function Whatsapp() {
         <span
           className="
             flex items-center justify-center
-            p-0 sm:p-2
+            p-0 sm:p-2 
             animate-pulse sm:animate-none
           "
         >

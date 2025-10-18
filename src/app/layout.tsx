@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Truth Hub – Technology That Protects, Intelligence That Empowers",
     description:
       "Whether you're home alone, traveling abroad, or managing loved ones remotely our app ensures safety, transparency, and real-time support.",
-    siteName: "ATH APP",
+    siteName: "TRUTH APP",
     images: [
       {
         url: "https://truthhub.vercel.app/assets/truthhub_icon.png",

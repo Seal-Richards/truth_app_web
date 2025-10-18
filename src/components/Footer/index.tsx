@@ -237,19 +237,36 @@ export default function Footer() {
         <div className="border-t border-gray-600 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
           <p>©TruthHub 2025, All Rights Reserved.</p>
           <div className="flex gap-4">
-            <a href="#">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon="streamline-logos:facebook-logo-2-block" className="w-5 h-5" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/truthhubng/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon="mdi:linkedin" className="w-5 h-5" />
             </a>
-            <a href="#">
+            <a
+              href="https://x.com/Truthhubng"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon="fa7-brands:square-x-twitter" className="w-5 h-5" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/truthhub.ng/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon="fa7-brands:instagram-square" className="w-5 h-5" />
             </a>
           </div>
+
         </div>
       </footer>
 
