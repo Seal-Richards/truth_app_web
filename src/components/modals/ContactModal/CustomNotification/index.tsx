@@ -9,7 +9,7 @@ export default function CustomNotification({ onClose }: { onClose: () => void })
     const timer = setTimeout(() => {}, 3000);
     return () => clearTimeout(timer);
   }, []);
-
+ 
   return (
     <AnimatePresence>
       <motion.div

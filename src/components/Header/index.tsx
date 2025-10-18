@@ -14,7 +14,7 @@ import { Button } from "@src/components/ui/button";
 import ContactModal from "@src/components/modals/ContactModal";
 import CustomNotification from "../modals/ContactModal/CustomNotification";
 
-//  Add a small helper for scroll behavior
+//  Add a small helper for scroll behavior 
 const scrollToSection = (id: string) => {
   const target = document.querySelector(id);
   if (target) {
@@ -132,7 +132,7 @@ export default function Header() {
           {/* Contact Us Button (Desktop) */}
           <div className="hidden md:block">
             <Button
-              onClick={() => setContactOpen(true)} // 👈 Open modal instead of navigating
+             onClick={() => setContactOpen(true)}// 👈 Open modal instead of navigating
               className="bg-primary text-primary-foreground rounded-full px-5 flex items-center gap-2"
             >
               <svg
@@ -201,10 +201,12 @@ export default function Header() {
       <ContactModal
         open={contactOpen}
         onOpenChange={setContactOpen}
-        onSuccess={() => setShowNotification(true)} //  show notification after close
+        onSuccess={() => setShowNotification(true)}
       />
 
-      {showNotification && <CustomNotification onClose={() => setShowNotification(false)} />}
+      {showNotification && (
+        <CustomNotification onClose={() => setShowNotification(false)} />
+      )}
 
     </>
   );
