@@ -22,7 +22,7 @@ export default function Whatsapp() {
         "
         aria-label="Chat with us on WhatsApp"
         onClick={() => {
-          window.open("https://wa.me/2348134996425", "_blank"); //  Replace with your WhatsApp number
+          window.open("https://wa.me/2348086206063", "_blank"); //  Replace with your WhatsApp number
         }}
       >
         {/* Icon */}
