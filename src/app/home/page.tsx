@@ -11,24 +11,24 @@ import FAQSection from "@src/components/sections/Faq";
 
 export default function HomePage() {
   return (
-    // <>
-    // <h1 className="text-red-500 font-size-20 text-center">Maintainance Scheduled</h1>
-    // </>
-    <DefaultLayout>
-      <Hero />
-      <div id="features" >
-        <ProblemSection />
-      </div>
+    <>
+    <h1 className="text-red-500 font-size-20 text-center">Maintainance Scheduled</h1>
+    </>
+    // <DefaultLayout>
+    //   <Hero />
+    //   <div id="features" >
+    //     <ProblemSection />
+    //   </div>
 
-      <MiniBanner />
-      <ReviewSection />
-      <HowItWorks />
-      <div id="pricing">
-        <PricingPlans />
-      </div>
-      <div id="faq">
-        <FAQSection />
-      </div>
-    </DefaultLayout>
+    //   <MiniBanner />
+    //   <ReviewSection />
+    //   <HowItWorks />
+    //   <div id="pricing">
+    //     <PricingPlans />
+    //   </div>
+    //   <div id="faq">
+    //     <FAQSection />
+    //   </div>
+    // </DefaultLayout>
   );
 }

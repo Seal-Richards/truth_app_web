@@ -12,32 +12,32 @@ export default function TermsPage() {
   const { pageTitle, intro, sections } = termsAndConditions;
 
   return (
-    <DefaultLayout>
-      {/* Top Banner */}
-      <DynamicBanner title={pageTitle} description="" showVectors />
+    // <DefaultLayout>
+    //   {/* Top Banner */}
+    //   <DynamicBanner title={pageTitle} description="" showVectors />
 
-      {/* Intro */}
-      <DynamicContents heading={pageTitle} description={intro} />
+    //   {/* Intro */}
+    //   <DynamicContents heading={pageTitle} description={intro} />
 
-      {/* Dynamic Sections with banner after 4th */}
-      {sections.map((section, index) => (
-        <div key={index}>
-          <DynamicContents
-            number={section.number}
-            heading={section.heading}
-            description={section.description}
-          />
-          {/* Show banner after the 4th section */}
-          {index === 3 && <MiniPublicBanner />}
-        </div>
-      ))}
+    //   {/* Dynamic Sections with banner after 4th */}
+    //   {sections.map((section, index) => (
+    //     <div key={index}>
+    //       <DynamicContents
+    //         number={section.number}
+    //         heading={section.heading}
+    //         description={section.description}
+    //       />
+    //       {/* Show banner after the 4th section */}
+    //       {index === 3 && <MiniPublicBanner />}
+    //     </div>
+    //   ))}
 
-      {/* FAQ + Newsletter */}
-      <div id="faq">
-        <FAQSection />
-      </div>
-      <NewsLetterSection />
-    </DefaultLayout>
-    // <h1 className="text-red-500 font-size-20 text-center">Maintainance Scheduled</h1>
+    //   {/* FAQ + Newsletter */}
+    //   <div id="faq">
+    //     <FAQSection />
+    //   </div>
+    //   <NewsLetterSection />
+    // </DefaultLayout>
+    <h1 className="text-red-500 font-size-20 text-center">Maintainance Scheduled</h1>
   );
 }
